@@ -60,7 +60,7 @@ function onColorClick(event){
 function onModeClick(){
     if(isFilling){
         isFilling = false;
-        modeBtn.innerText ="Fill"
+        modeBtn.innerText ="✒️ Fill"
     } else{
         isFilling = true;
         modeBtn.innerText ="Draw"
@@ -72,11 +72,11 @@ function onCanvasClick(){
     }
 }
 function onDestroyClick(){
-    ctx.fillStyle = "turquoise";
+    ctx.fillStyle = "white";
     ctx.fillRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);
 }
 function onEraserClick(){
-    ctx.strokeStyle ="turquoise"
+    ctx.strokeStyle ="white"
     isFilling = false;
     modeBtn.innerText = "fill";
 }
